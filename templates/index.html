@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>QR CODE GENERATOR</title>
+    <style>
+        /* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #929bc2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #666;
+}
+
+/* Style the form */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #505a9f;
+    border-radius: 5px;
+    width: 35%;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the QR code image and description */
+img {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+p {
+    color: #777;
+    font-size: 18px;
+}
+
+/* Add some padding to the container */
+.container {
+    padding: 20px;
+    color:#929bc2;
+}
+
+p#qr-message {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    </body>
+    <h1> Welcome to our QR Code Generator</h1>
+    <h2>Insert a link or message to generate a QR Code</h2>
+    </div>
+    <form action="/" method="POST">
+        <input type="text" placeholder="your link or message here" name="data">
+        <button type="submit">Generate</button>
+    </form>
+    <img src ="{{data}}" alt="">
+    <p id="qr-message">Here is the QR Code generated</p>
+</body>
+</html>
